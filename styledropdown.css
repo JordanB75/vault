@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 3;
+}
+
+nav {
+    margin: 2;
+    padding: .5rem;
+    background-color: #004b98;
+}
+
+nav a {
+    text-decoration: none;
+    color: #eee
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* padding: 0.4rem; */
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+nav ul li a{
+    padding: 0.4rem;
+    line-height: 1.5rem;
+    
+}
+
+nav ul li:hover {
+    background-color: #0069d4;
+}
+
+nav .menu .submenu {
+    padding-top: 5px;
+    position: absolute;
+    background: #004b98;
+    display: none;
+}
+
+nav .menu:hover .submenu {
+    display: block;
+}
+
+nav .menu .submenu li .submenu {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    display: none;
+}
+
+nav .menu .submenu li:hover > .submenu {
+    display: block;
+}
+
+nav .move-right-btn {
+    margin-left: auto;
+}
+
